@@ -14,9 +14,9 @@
 	"license" : "Apache2",
 	"authors": [
 	    {
-	      "name": "zhaoyang",
-	      "email": "1134856531@qq.com",
-	      "homepage": "https://github.com/zhaoyang1214"
+	      	"name": "zhaoyang",
+	      	"email": "1134856531@qq.com",
+	      	"homepage": "https://github.com/zhaoyang1214"
 	    }
 	  ],
 	"require" : {
@@ -24,6 +24,7 @@
 		"ext-phalcon" : ">=3.0.0",
 		"phalcon-framwork/plugins" : "^1.1",
 		"phalcon-framwork/extensions" : "^1.0",
-		"phalcon-framwork/helpers": "^1.0"
+		"phalcon-framwork/helpers": "^1.0",
+		"phalcon-framwork/validate": "^1.0"
 	}
 }
