@@ -22,9 +22,9 @@
 	"require" : {
 		"php" : ">=7.0",
 		"ext-phalcon" : ">=3.0.0",
-		"phalcon-framwork/plugins" : "^1.1",
-		"phalcon-framwork/extensions" : "^1.0",
-		"phalcon-framwork/helpers": "^1.0",
-		"phalcon-framwork/validate": "^1.0"
+		"phalcon-framwork/plugins" : "1.1.*",
+		"phalcon-framwork/extensions" : "1.0.*",
+		"phalcon-framwork/helpers": "1.0.*",
+		"phalcon-framwork/validate": "1.0.*"
 	}
 }
