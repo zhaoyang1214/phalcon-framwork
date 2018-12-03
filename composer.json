@@ -11,7 +11,7 @@
 	"name" : "phalcon-framwork/phalcon-framwork",
 	"type" : "phalcon-framwork",
 	"description" : "the phalcon framwork",
-	"license" : "Apache2",
+	"license" : "Apache-2.0",
 	"authors": [
 	    {
 	      	"name": "zhaoyang",
