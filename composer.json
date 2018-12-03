@@ -9,7 +9,7 @@
 		}
 	},
 	"name" : "phalcon-framwork/phalcon-framwork",
-	"type" : "project",
+	"type" : "phalcon-framwork",
 	"description" : "the phalcon framwork",
 	"license" : "Apache2",
 	"authors": [
