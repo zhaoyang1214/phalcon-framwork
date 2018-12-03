@@ -27,6 +27,9 @@ define('APP_PATH', BASE_PATH . APP_NAME . DS);
 // web目录
 define('PUBLIC_PATH', BASE_PATH . 'public/');
 
+// 运行目录
+define('RUNTIME_PATH', BASE_PATH . 'runtime/');
+
 // 模块列表
 define('MODULE_ALLOW_LIST', [
     'home',
