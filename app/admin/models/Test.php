@@ -1,10 +1,8 @@
 <?php
 namespace App\Admin\Models;
 
-use App\Common\BaseModel;
+use Models\Test as TestModel;
 
-class Test extends BaseModel
+class Test extends TestModel
 {
-
-    protected static $tableName = 'test';
 }
