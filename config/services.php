@@ -36,6 +36,7 @@ use Phalcon\Flash\Direct as FlashDirect;
 use Phalcon\Flash\Session as FlashSession;
 use Phalcon\Security;
 use Phalcon\Mvc\Url;
+use PhalconViewEngine\Smarty as ViewEngineSmarty;
 
 $di = new FactoryDefault();
 
@@ -120,6 +121,16 @@ $di->setShared('viewEngineVolt', function (View $view, DI $di) {
 $di->setShared('viewEnginePhp', function (View $view, DI $di) {
     $viewEnginePhp = new ViewEnginePhp($view, $di);
     return $viewEnginePhp;
+});
+
+/**
+ * 注册视图引擎smarty服务
+ */
+$di->setShared('viewEngineSmarty', function (View $view, DI $di) {
+    $smartyConfig = $this->getConfig()->services->view_engine_smarty->toArray();
+    $viewEngineSmarty = new ViewEngineSmarty($view, $di);
+    $viewEngineSmarty->setOptions($smartyConfig);
+    return $viewEngineSmarty;
 });
 
 /**

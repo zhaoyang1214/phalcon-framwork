@@ -14,6 +14,8 @@ composer create-project phalcon-framwork/phalcon-framwork phalcon
 3. 封装了验证器
 4. 在基础控制器中封装了获取get、post、json参数并自动过滤数据
 5. 对原转发（forward）做了封装
+6. 支持cli命令行模式
+7. 集成了smarty模板引擎(当模板后缀名为html时，自动使用smarty模板引擎解析)
 
 
 ## 说明：
