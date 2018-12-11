@@ -28,6 +28,7 @@
 		"phalcon-framwork/plugins" : "1.1.*",
 		"phalcon-framwork/extensions" : "1.0.*",
 		"phalcon-framwork/helpers": "1.0.*",
-		"phalcon-framwork/validate": "1.1.*"
+		"phalcon-framwork/validate": "1.1.*",
+		"phalcon-framwork/view-engine": "^1.0"
 	}
 }

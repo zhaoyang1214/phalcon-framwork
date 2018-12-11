@@ -38,9 +38,9 @@ return [
         // volt引擎相关配置
         'view_engine_volt' => [
             // 编译模板目录
-            'compiled_path' => BASE_PATH . 'runtime/cache/compiled/',
+            'compiled_path' => RUNTIME_PATH . 'cache/compiled/',
             // 是否实时编译
-            'compile_always' => false,
+            'compile_always' => true,
             // 附加到已编译的PHP文件的扩展名
             'compiled_extension' => '.php',
             // 使用这个替换目录分隔符
@@ -52,6 +52,14 @@ return [
             // 支持HTML的全局自动转义
             'autoescape' => false
         ],
+        // smarty引擎相关配置,直接配置smarty参数
+        'view_engine_smarty' => [
+            'compile_dir' => RUNTIME_PATH . 'cache/compiled/',
+            // 一般无需配置为true,使用view_cache缓存即可
+            'caching' => false,
+            'cache_lifetime' => 3600,
+            'cache_dir' => RUNTIME_PATH . 'cache/view_cache/'
+        ],
         // 模板相关配置
         'view' => [
             // 是否关闭视图
@@ -61,7 +69,8 @@ return [
             // 模板引擎,根据模板后缀自动匹配视图引擎，不启用则设为false
             'engines' => [
                 '.volt' => 'viewEngineVolt',
-                '.phtml' => 'viewEnginePhp'
+                '.phtml' => 'viewEnginePhp',
+                '.html' => 'viewEngineSmarty'
             ],
             'disable_level' => [
                 'level_action_view' => false,
