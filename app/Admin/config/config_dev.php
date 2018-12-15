@@ -1,8 +1,8 @@
 <?php
 // 模块名称
-define('MODULE_NAME', 'home');
+define('MODULE_NAME', 'Admin');
 // 模块命名空间
-define('MODULE_NAMESPACE', APP_NAMESPACE . '\\Home');
+define('MODULE_NAMESPACE', APP_NAMESPACE . '\\Admin');
 
 return [
     // 服务配置

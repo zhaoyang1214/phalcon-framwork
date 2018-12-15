@@ -32,13 +32,13 @@ define('RUNTIME_PATH', BASE_PATH . 'runtime/');
 
 // 模块列表
 define('MODULE_ALLOW_LIST', [
-    'home',
-    'admin',
-    'api'
+    'Home',
+    'Admin',
+    'Api'
 ]);
 
 // 默认模块
-define('DEFAULT_MODULE', 'home');
+define('DEFAULT_MODULE', 'Home');
 
 // 默认模块命名空间
 define('DEFAULT_MODULE_NAMESPACE', APP_NAMESPACE . '\\Home');

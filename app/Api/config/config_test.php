@@ -1,8 +1,8 @@
 <?php
 // 模块名称
-define('MODULE_NAME', 'admin');
+define('MODULE_NAME', 'Api');
 // 模块命名空间
-define('MODULE_NAMESPACE', APP_NAMESPACE . '\\Admin');
+define('MODULE_NAMESPACE', APP_NAMESPACE . '\\Api');
 
 return [
     // 服务配置
@@ -21,15 +21,8 @@ return [
         ],
         // 模板相关配置
         'view' => [
-            // 模板路径
-            'view_path' => APP_PATH . MODULE_NAME . '/views/',
-            'disable_level' => [
-                'level_action_view' => false,
-                'level_before_template' => false,
-                'level_layout' => true,
-                'level_after_template' => true,
-                'level_main_layout' => true
-            ]
+            // 是否关闭视图
+            'disable' => true
         ],
         'logger' => [
             'file' => [

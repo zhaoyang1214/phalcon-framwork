@@ -28,27 +28,26 @@ $routers = [
 ];
 
 foreach (MODULE_ALLOW_LIST as $v) {
-    $vUcfirst = ucfirst($v);
     $routers['/' . $v] = [
-        'namespace' => APP_NAMESPACE . '\\' . $vUcfirst . '\\Controllers',
+        'namespace' => APP_NAMESPACE . '\\' . $v . '\\Controllers',
         'module' => $v,
         'controller' => 'Index',
         'action' => 'index'
     ];
     $routers['/' . $v . '/:controller'] = [
-        'namespace' => APP_NAMESPACE . '\\' . $vUcfirst . '\\Controllers',
+        'namespace' => APP_NAMESPACE . '\\' . $v . '\\Controllers',
         'module' => $v,
         'controller' => 1,
         'action' => 'index'
     ];
     $routers['/' . $v . '/:controller/:action'] = [
-        'namespace' => APP_NAMESPACE . '\\' . $vUcfirst . '\\Controllers',
+        'namespace' => APP_NAMESPACE . '\\' . $v . '\\Controllers',
         'module' => $v,
         'controller' => 1,
         'action' => 2
     ];
     $routers['/' . $v . '/:controller/:action/:params'] = [
-        'namespace' => APP_NAMESPACE . '\\' . $vUcfirst . '\\Controllers',
+        'namespace' => APP_NAMESPACE . '\\' . $v . '\\Controllers',
         'module' => $v,
         'controller' => 1,
         'action' => 2,
