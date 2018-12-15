@@ -33,11 +33,10 @@ try {
     $modules = [];
     foreach (MODULE_ALLOW_LIST as $v) {
         $modules[$v] = [
-            'className' => APP_NAMESPACE . '\\' . ucfirst($v) . '\\Module',
+            'className' => APP_NAMESPACE . '\\' . $v . '\\Module',
             'path' => APP_PATH . $v . '/Module.php'
         ];
     }
-    
     // 加入模块分组配置
     $application->registerModules($modules);
     

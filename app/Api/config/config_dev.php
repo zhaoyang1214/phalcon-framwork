@@ -1,6 +1,6 @@
 <?php
 // 模块名称
-define('MODULE_NAME', 'api');
+define('MODULE_NAME', 'Api');
 // 模块命名空间
 define('MODULE_NAMESPACE', APP_NAMESPACE . '\\Api');
 
